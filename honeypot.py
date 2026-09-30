@@ -11,8 +11,8 @@ import os
 # -------------------------------------------------------------
 # ⚙️ TELEGRAM CONFIGURATION
 # -------------------------------------------------------------
-TELEGRAM_BOT_TOKEN = "8907153904:AAGqZpd6WZ8bGlfaiaHNnjluv00FFZvtBsc"
-TELEGRAM_CHAT_ID = "6554887188"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN_HERE")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "YOUR_TELEGRAM_CHAT_ID_HERE")
 
 def send_telegram_alert(ip, username, password, timestamp):
     """Sends immediate attack alert to Telegram"""
