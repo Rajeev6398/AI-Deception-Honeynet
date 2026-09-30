@@ -1,0 +1,4 @@
+server.key
+attack_logs.json
+__pycache__/
+.env
